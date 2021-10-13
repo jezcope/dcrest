@@ -1,7 +1,7 @@
 import requests as rq
 from furl import furl
 
-from .endpoints.dois import DOIsEndpoint
+from dcrest.endpoints import DOIsEndpoint, ProvidersEndpoint
 
 
 class DataCiteClient:
@@ -46,3 +46,11 @@ class DataCiteClient:
         except AttributeError:
             self._dois = DOIsEndpoint(self)
             return self._dois
+
+    @property
+    def providers(self):
+        try:
+            return self._providers
+        except AttributeError:
+            self._providers = ProvidersEndpoint(self)
+            return self._providers
