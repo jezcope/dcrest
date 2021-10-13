@@ -42,3 +42,15 @@ class TestProviders:
 
         for row in rows:
             assert "id" in row
+
+    @pytest.mark.vcr()
+    def test_get(self, client):
+        provider = client.providers.get("bl")
+
+        assert provider["id"] == "bl"
+        assert provider["type"] == "providers"
+
+        attrs = provider["attributes"]
+        assert attrs["name"] == "The British Library"
+        assert attrs["country"] == "GB"
+        assert attrs["isActive"] == True

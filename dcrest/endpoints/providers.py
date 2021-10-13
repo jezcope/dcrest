@@ -11,5 +11,10 @@ class ProvidersEndpoint:
             yield from page["data"]
 
     def totals(self):
-        result = self._client.get(f"{self.endpoint}/totals")
-        return result.json()
+        response = self._client.get(f"{self.endpoint}/totals")
+        return response.json()
+
+    def get(self, provider_id):
+        response = self._client.get(f"{self.endpoint}/{provider_id}")
+        result = response.json()
+        return result["data"]

@@ -1,0 +1,89 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+    method: GET
+    uri: https://api.test.datacite.org/providers/bl
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Access-Control-Allow-Origin,Access-Control-Expose-Headers,Access-Control-Allow-Methods,Access-Control-Allow-Headers,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Mx-ReqToken,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - Authorization
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Oct 2021 10:53:48 GMT
+      ETag:
+      - W/"4ffba0ea9d9decac00e205de10ece469"
+      Server:
+      - nginx/1.14.0 + Phusion Passenger(R) 6.0.10
+      Status:
+      - 200 OK
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Anonymous-Consumer:
+      - 'true'
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.10
+      X-Request-Id:
+      - ebd4601c-dba0-4b6d-9037-1cc5f38c0a67
+      X-Runtime:
+      - '0.036937'
+    status:
+      code: 200
+      message: OK
+version: 1
