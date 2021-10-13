@@ -9,3 +9,7 @@ class ProvidersEndpoint:
             params = {}
         for page in self._client.get_paged(self.endpoint, params):
             yield from page["data"]
+
+    def totals(self):
+        result = self._client.get(f"{self.endpoint}/totals")
+        return result.json()

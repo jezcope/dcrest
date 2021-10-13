@@ -35,3 +35,10 @@ class TestProviders:
         for row in islice(rows, 10):
             assert "id" in row
             assert row["type"] == "providers"
+
+    @pytest.mark.vcr()
+    def test_totals_simple(self, client):
+        rows = client.providers.totals()
+
+        for row in rows:
+            assert "id" in row
