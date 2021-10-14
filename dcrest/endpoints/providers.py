@@ -1,3 +1,6 @@
+from munch import munchify
+
+
 class ProvidersEndpoint:
     endpoint = "providers"
 
@@ -13,9 +16,10 @@ class ProvidersEndpoint:
 
     async def totals(self):
         response = await self._client.get(f"{self.endpoint}/totals")
-        return await response.json()
+        result = await response.json()
+        return munchify(result)
 
     async def get(self, provider_id):
         response = await self._client.get(f"{self.endpoint}/{provider_id}")
         result = await response.json()
-        return result["data"]
+        return munchify(result["data"])

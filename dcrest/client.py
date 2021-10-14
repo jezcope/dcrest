@@ -1,6 +1,7 @@
 import asyncio
 
 import aiohttp
+from munch import munchify
 from yarl import URL
 
 from dcrest.endpoints import DOIsEndpoint, ProvidersEndpoint
@@ -30,14 +31,14 @@ class DataCiteClient:
         result.raise_for_status()
 
         response = await result.json()
-        yield response
+        yield munchify(response)
 
         while "next" in response["links"]:
             result = await self._http.get(response["links"]["next"], params=params)
             result.raise_for_status()
 
             response = await result.json()
-            yield response
+            yield munchify(response)
 
     @property
     def dois(self):
