@@ -1,42 +1,42 @@
-import requests as rq
-from furl import furl
+import asyncio
+
+import aiohttp
+from yarl import URL
 
 from dcrest.endpoints import DOIsEndpoint, ProvidersEndpoint
 
 
 class DataCiteClient:
-    def __init__(self, test=True, http_client=None):
+    def __init__(self, session, test=True):
         if test:
-            self._ROOT = furl("https://api.test.datacite.org")
+            self._ROOT = URL("https://api.test.datacite.org")
         else:
-            self._ROOT = furl("https://api.datacite.org")
+            self._ROOT = URL("https://api.datacite.org")
 
-        if http_client is None:
-            self._http = rq.Session()
-        else:
-            self._http = http_client
+        self._http = session
 
-    def get(self, endpoint, *args, **kwargs):
+    async def get(self, endpoint, *args, **kwargs):
         url = self._ROOT / endpoint
-        result = self._http.get(url.url, *args, **kwargs)
+        result = await self._http.get(url, *args, **kwargs)
         result.raise_for_status()
         return result
 
-    def get_paged(self, endpoint, params, page_size=100):
+    async def get_paged(self, endpoint, params, page_size=100):
         url = self._ROOT / endpoint
+        print(url)
         final_params = params | {"page[size]": page_size, "page[cursor]": 0}
 
-        result = self._http.get(url.url, params=final_params)
+        result = await self._http.get(url, params=final_params)
         result.raise_for_status()
 
-        response = result.json()
+        response = await result.json()
         yield response
 
         while "next" in response["links"]:
-            result = self._http.get(response["links"]["next"], params=params)
+            result = await self._http.get(response["links"]["next"], params=params)
             result.raise_for_status()
 
-            response = result.json()
+            response = await result.json()
             yield response
 
     @property

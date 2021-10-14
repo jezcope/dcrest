@@ -1,51 +1,13 @@
 interactions:
 - request:
     body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.26.0
+    headers: {}
     method: GET
     uri: https://api.test.datacite.org/providers/bl
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"data":{"id":"bl","type":"providers","attributes":{"name":"The British
+        Library","displayName":"The British Library","symbol":"BL","website":"https://www.british.co.uk","description":null,"region":"EMEA","country":"GB","logoUrl":"https://assets.test.datacite.org/images/members/bl.png?1602684228","memberType":"direct_member","organizationType":null,"focusArea":"general","nonProfitStatus":"non-profit","isActive":true,"joined":null,"rorId":"https://ror.org/05dhe8b71","created":"2010-01-01T00:00:00.000Z","updated":"2020-10-14T14:03:48.000Z"},"relationships":{"clients":{"data":[{"id":"bl.ukda","type":"clients"},{"id":"bl.test","type":"clients"},{"id":"bl.esds-i","type":"clients"},{"id":"bl.wap","type":"clients"},{"id":"bl.oxdb","type":"clients"},{"id":"bl.sagecite","type":"clients"},{"id":"bl.nerc","type":"clients"},{"id":"bl.ads","type":"clients"},{"id":"bl.stfc","type":"clients"},{"id":"bl.fba","type":"clients"},{"id":"bl.test3","type":"clients"},{"id":"bl.ucld","type":"clients"},{"id":"bl.old-api","type":"clients"},{"id":"bl.diamond","type":"clients"},{"id":"bl.hull","type":"clients"},{"id":"bl.edtest","type":"clients"},{"id":"bl.jisc-mrd","type":"clients"},{"id":"bl.vads","type":"clients"},{"id":"bl.notts","type":"clients"},{"id":"bl.essex","type":"clients"},{"id":"bl.soton","type":"clients"},{"id":"bl.bristol","type":"clients"},{"id":"bl.glasgow","type":"clients"},{"id":"bl.lincoln","type":"clients"},{"id":"bl.dri","type":"clients"},{"id":"bl.ucd","type":"clients"},{"id":"bl.imperial","type":"clients"},{"id":"bl.iucn","type":"clients"},{"id":"bl.ntu","type":"clients"},{"id":"bl.oneis","type":"clients"},{"id":"bl.f1000r","type":"clients"},{"id":"bl.libre","type":"clients"},{"id":"bl.leeds","type":"clients"},{"id":"bl.sahfos","type":"clients"},{"id":"bl.ed","type":"clients"},{"id":"bl.marinesc","type":"clients"},{"id":"bl.uel","type":"clients"},{"id":"bl.mchester","type":"clients"},{"id":"bl.sheffiel","type":"clients"},{"id":"bl.cefas","type":"clients"},{"id":"bl.lshtm","type":"clients"},{"id":"bl.ukaea","type":"clients"},{"id":"bl.york","type":"clients"},{"id":"bl.bath","type":"clients"},{"id":"bl.surrey","type":"clients"},{"id":"bl.nshd","type":"clients"},{"id":"bl.mdx","type":"clients"},{"id":"bl.durham","type":"clients"},{"id":"bl.passtest","type":"clients"},{"id":"bl.strath","type":"clients"},{"id":"bl.bir","type":"clients"},{"id":"bl.nhm","type":"clients"},{"id":"bl.mendeley","type":"clients"},{"id":"bl.rsc","type":"clients"},{"id":"bl.lancs","type":"clients"},{"id":"bl.cardiff","type":"clients"},{"id":"bl.portsmth","type":"clients"},{"id":"bl.mba","type":"clients"},{"id":"bl.dundee","type":"clients"},{"id":"bl.bto","type":"clients"},{"id":"bl.standrew","type":"clients"},{"id":"bl.kent","type":"clients"},{"id":"bl.qub","type":"clients"},{"id":"bl.lpool","type":"clients"},{"id":"bl.eap","type":"clients"},{"id":"bl.aber","type":"clients"},{"id":"bl.uclan","type":"clients"},{"id":"bl.qmul","type":"clients"},{"id":"bl.lboro","type":"clients"},{"id":"bl.shef","type":"clients"},{"id":"bl.sgul","type":"clients"},{"id":"bl.aston","type":"clients"},{"id":"bl.rhul","type":"clients"},{"id":"bl.uea","type":"clients"},{"id":"bl.hallam","type":"clients"},{"id":"bl.ncl","type":"clients"},{"id":"bl.brighton","type":"clients"},{"id":"bl.hwu","type":"clients"},{"id":"bl.ecmwf","type":"clients"},{"id":"bl.brunel","type":"clients"},{"id":"bl.reading","type":"clients"},{"id":"bl.birkbeck","type":"clients"},{"id":"bl.unity","type":"clients"},{"id":"bl.granta","type":"clients"},{"id":"bl.cran","type":"clients"},{"id":"bl.cam","type":"clients"},{"id":"bl.derby","type":"clients"},{"id":"bl.abdn","type":"clients"},{"id":"bl.salford","type":"clients"},{"id":"bl.herts","type":"clients"},{"id":"bl.kcl","type":"clients"},{"id":"bl.napier","type":"clients"},{"id":"bl.marineie","type":"clients"},{"id":"bl.bmouth","type":"clients"},{"id":"bl.bathspa","type":"clients"},{"id":"bl.keele","type":"clients"},{"id":"bl.lsbu","type":"clients"},{"id":"bl.lse","type":"clients"},{"id":"bl.odi","type":"clients"},{"id":"bl.labs","type":"clients"},{"id":"bl.ulster","type":"clients"},{"id":"bl.exeter","type":"clients"},{"id":"bl.open","type":"clients"},{"id":"bl.dmu","type":"clients"},{"id":"bl.kingston","type":"clients"},{"id":"bl.lstmed","type":"clients"},{"id":"bl.ljmu","type":"clients"},{"id":"bl.ever-est","type":"clients"},{"id":"bl.jiscrdss","type":"clients"},{"id":"bl.metadata","type":"clients"},{"id":"bl.mmu","type":"clients"},{"id":"bl.abertay","type":"clients"},{"id":"bl.rothres","type":"clients"},{"id":"bl.rcm","type":"clients"},{"id":"bl.phe","type":"clients"},{"id":"bl.plymouth","type":"clients"},{"id":"bl.brookes","type":"clients"},{"id":"bl.qnl","type":"clients"},{"id":"bl.limerick","type":"clients"},{"id":"bl.soas","type":"clients"},{"id":"bl.jncc","type":"clients"},{"id":"bl.gold","type":"clients"},{"id":"bl.bham","type":"clients"},{"id":"bl.iita","type":"clients"},{"id":"bl.jisc","type":"clients"},{"id":"bl.rvc","type":"clients"},{"id":"bl.westminster","type":"clients"},{"id":"bl.repo","type":"clients"},{"id":"bl.rep-bm","type":"clients"},{"id":"bl.rep-mola","type":"clients"},{"id":"bl.rep-nms","type":"clients"},{"id":"bl.rep-tate","type":"clients"},{"id":"bl.stirling","type":"clients"},{"id":"bl.testd","type":"clients"},{"id":"bl.rep-kew","type":"clients"},{"id":"bl.huddersfield","type":"clients"},{"id":"bl.ceh","type":"clients"},{"id":"bl.cabi","type":"clients"},{"id":"bl.nls","type":"clients"},{"id":"bl.testf","type":"clients"},{"id":"aa.test2","type":"clients"},{"id":"bl.ual","type":"clients"},{"id":"bl.unep-wcmc","type":"clients"},{"id":"bl.train","type":"clients"},{"id":"bl.ons","type":"clients"},{"id":"bl.fairshareox","type":"clients"},{"id":"bl.wcmc","type":"clients"},{"id":"bl.somia","type":"clients"},{"id":"moia.vangog","type":"clients"},{"id":"moia.picasso","type":"clients"},{"id":"moia.wenger","type":"clients"},{"id":"moia.berner","type":"clients"},{"id":"bl.cprd","type":"clients"},{"id":"bl.bangor","type":"clients"}]},"prefixes":{"data":[{"id":"10.4124","type":"prefixes"},{"id":"10.5255","type":"prefixes"},{"id":"10.5256","type":"prefixes"},{"id":"10.5257","type":"prefixes"},{"id":"10.5258","type":"prefixes"},{"id":"10.5259","type":"prefixes"},{"id":"10.5287","type":"prefixes"},{"id":"10.5518","type":"prefixes"},{"id":"10.5519","type":"prefixes"},{"id":"10.5520","type":"prefixes"},{"id":"10.5521","type":"prefixes"},{"id":"10.5522","type":"prefixes"},{"id":"10.5523","type":"prefixes"},{"id":"10.5525","type":"prefixes"},{"id":"10.5526","type":"prefixes"},{"id":"10.5285","type":"prefixes"},{"id":"10.5284","type":"prefixes"},{"id":"10.5286","type":"prefixes"},{"id":"10.7486","type":"prefixes"},{"id":"10.7487","type":"prefixes"},{"id":"10.7488","type":"prefixes"},{"id":"10.7489","type":"prefixes"},{"id":"10.7490","type":"prefixes"},{"id":"10.14468","type":"prefixes"},{"id":"10.14469","type":"prefixes"},{"id":"10.14465","type":"prefixes"},{"id":"10.14466","type":"prefixes"},{"id":"10.14467","type":"prefixes"},{"id":"10.15131","type":"prefixes"},{"id":"10.15132","type":"prefixes"},{"id":"10.15130","type":"prefixes"},{"id":"10.15129","type":"prefixes"},{"id":"10.15128","type":"prefixes"},{"id":"10.15127","type":"prefixes"},{"id":"10.15123","type":"prefixes"},{"id":"10.15126","type":"prefixes"},{"id":"10.15125","type":"prefixes"},{"id":"10.15124","type":"prefixes"},{"id":"10.17029","type":"prefixes"},{"id":"10.17028","type":"prefixes"},{"id":"10.17033","type":"prefixes"},{"id":"10.17032","type":"prefixes"},{"id":"10.17031","type":"prefixes"},{"id":"10.17030","type":"prefixes"},{"id":"10.17037","type":"prefixes"},{"id":"10.17036","type":"prefixes"},{"id":"10.17035","type":"prefixes"},{"id":"10.17034","type":"prefixes"},{"id":"10.17639","type":"prefixes"},{"id":"10.17638","type":"prefixes"},{"id":"10.17637","type":"prefixes"},{"id":"10.17636","type":"prefixes"},{"id":"10.17635","type":"prefixes"},{"id":"10.17634","type":"prefixes"},{"id":"10.17633","type":"prefixes"},{"id":"10.17632","type":"prefixes"},{"id":"10.17630","type":"prefixes"},{"id":"10.17631","type":"prefixes"},{"id":"10.17870","type":"prefixes"},{"id":"10.17868","type":"prefixes"},{"id":"10.17867","type":"prefixes"},{"id":"10.17869","type":"prefixes"},{"id":"10.17864","type":"prefixes"},{"id":"10.17862","type":"prefixes"},{"id":"10.17863","type":"prefixes"},{"id":"10.17861","type":"prefixes"},{"id":"10.17866","type":"prefixes"},{"id":"10.17865","type":"prefixes"},{"id":"10.18746","type":"prefixes"},{"id":"10.18745","type":"prefixes"},{"id":"10.18744","type":"prefixes"},{"id":"10.18743","type":"prefixes"},{"id":"10.18742","type":"prefixes"},{"id":"10.20392","type":"prefixes"},{"id":"10.20391","type":"prefixes"},{"id":"10.20390","type":"prefixes"},{"id":"10.20394","type":"prefixes"},{"id":"10.20393","type":"prefixes"},{"id":"10.21250","type":"prefixes"},{"id":"10.21254","type":"prefixes"},{"id":"10.21253","type":"prefixes"},{"id":"10.21252","type":"prefixes"},{"id":"10.21251","type":"prefixes"},{"id":"10.21957","type":"prefixes"},{"id":"10.21956","type":"prefixes"},{"id":"10.21953","type":"prefixes"},{"id":"10.21955","type":"prefixes"},{"id":"10.21954","type":"prefixes"},{"id":"10.22024","type":"prefixes"},{"id":"10.22023","type":"prefixes"},{"id":"10.22021","type":"prefixes"},{"id":"10.22026","type":"prefixes"},{"id":"10.22025","type":"prefixes"},{"id":"10.22020","type":"prefixes"},{"id":"10.23637","type":"prefixes"},{"id":"10.23636","type":"prefixes"},{"id":"10.23635","type":"prefixes"},{"id":"10.23634","type":"prefixes"},{"id":"10.24353","type":"prefixes"},{"id":"10.24382","type":"prefixes"},{"id":"10.24383","type":"prefixes"},{"id":"10.24384","type":"prefixes"},{"id":"10.24385","type":"prefixes"},{"id":"10.24380","type":"prefixes"},{"id":"10.24381","type":"prefixes"},{"id":"10.24379","type":"prefixes"},{"id":"10.24376","type":"prefixes"},{"id":"10.24378","type":"prefixes"},{"id":"10.24377","type":"prefixes"},{"id":"10.25506","type":"prefixes"},{"id":"10.25505","type":"prefixes"},{"id":"10.25508","type":"prefixes"},{"id":"10.25507","type":"prefixes"},{"id":"10.25502","type":"prefixes"},{"id":"10.25501","type":"prefixes"},{"id":"10.25504","type":"prefixes"},{"id":"10.25503","type":"prefixes"},{"id":"10.25500","type":"prefixes"},{"id":"10.25499","type":"prefixes"},{"id":"10.25560","type":"prefixes"},{"id":"10.25562","type":"prefixes"},{"id":"10.25561","type":"prefixes"},{"id":"10.25568","type":"prefixes"},{"id":"10.25567","type":"prefixes"},{"id":"10.25569","type":"prefixes"},{"id":"10.25564","type":"prefixes"},{"id":"10.25563","type":"prefixes"},{"id":"10.25566","type":"prefixes"},{"id":"10.25565","type":"prefixes"},{"id":"10.70021","type":"prefixes"},{"id":"10.33567","type":"prefixes"},{"id":"10.33561","type":"prefixes"},{"id":"10.33574","type":"prefixes"},{"id":"10.33559","type":"prefixes"},{"id":"10.33632","type":"prefixes"},{"id":"10.33633","type":"prefixes"},{"id":"10.33603","type":"prefixes"},{"id":"10.33604","type":"prefixes"},{"id":"10.33605","type":"prefixes"},{"id":"10.33606","type":"prefixes"},{"id":"10.33634","type":"prefixes"},{"id":"10.25601","type":"prefixes"},{"id":"10.1234","type":"prefixes"},{"id":"10.7948","type":"prefixes"},{"id":"10.7956","type":"prefixes"},{"id":"10.80007","type":"prefixes"},{"id":"10.80009","type":"prefixes"},{"id":"10.80022","type":"prefixes"},{"id":"10.80045","type":"prefixes"},{"id":"10.80054","type":"prefixes"},{"id":"10.80020","type":"prefixes"},{"id":"10.80103","type":"prefixes"},{"id":"10.80226","type":"prefixes"},{"id":"10.80294","type":"prefixes"},{"id":"10.80419","type":"prefixes"},{"id":"10.80418","type":"prefixes"},{"id":"10.80423","type":"prefixes"},{"id":"10.80485","type":"prefixes"},{"id":"10.80177","type":"prefixes"},{"id":"10.80181","type":"prefixes"},{"id":"10.80198","type":"prefixes"},{"id":"10.80207","type":"prefixes"},{"id":"10.80216","type":"prefixes"},{"id":"10.80295","type":"prefixes"},{"id":"10.80515","type":"prefixes"}]},"contacts":{"data":[]}}},"meta":{"repositoryCount":154}}'
     headers:
       Access-Control-Allow-Credentials:
       - 'true'
@@ -64,9 +26,9 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 13 Oct 2021 10:53:48 GMT
-      ETag:
-      - W/"4ffba0ea9d9decac00e205de10ece469"
+      - Thu, 14 Oct 2021 12:36:42 GMT
+      Etag:
+      - W/"12468b0be382c452667044c1ab675871"
       Server:
       - nginx/1.14.0 + Phusion Passenger(R) 6.0.10
       Status:
@@ -80,10 +42,11 @@ interactions:
       X-Powered-By:
       - Phusion Passenger(R) 6.0.10
       X-Request-Id:
-      - ebd4601c-dba0-4b6d-9037-1cc5f38c0a67
+      - 7cc4af9e-713f-4f8e-aad9-ea81dfcc1e33
       X-Runtime:
-      - '0.036937'
+      - '0.065608'
     status:
       code: 200
       message: OK
+    url: https://api.test.datacite.org/providers/bl
 version: 1

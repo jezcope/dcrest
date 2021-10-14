@@ -1,12 +1,15 @@
-import pytest
 from itertools import islice
+from typing import Iterable, Sequence
 
+import aiohttp
 import dcrest
+import pytest
 
 
 @pytest.fixture
-def client():
-    return dcrest.DataCiteClient()
+async def client():
+    async with aiohttp.ClientSession() as session:
+        yield dcrest.DataCiteClient(session)
 
 
 class TestClient:
@@ -18,34 +21,38 @@ class TestClient:
 
 
 class TestDOIs:
+    @pytest.mark.asyncio()
     @pytest.mark.vcr()
-    def test_query_simple(self, client):
+    async def test_query_simple(self, client):
         rows = client.dois.query()
 
-        for row in islice(rows, 10):
-            assert "id" in row
-            assert row["type"] == "dois"
+        row = await rows.__anext__()
+        assert "id" in row
+        assert row["type"] == "dois"
 
 
 class TestProviders:
+    @pytest.mark.asyncio()
     @pytest.mark.vcr()
-    def test_query_simple(self, client):
+    async def test_query_simple(self, client):
         rows = client.providers.query()
 
-        for row in islice(rows, 10):
-            assert "id" in row
-            assert row["type"] == "providers"
+        row = await rows.__anext__()
+        assert "id" in row
+        assert row["type"] == "providers"
 
+    @pytest.mark.asyncio()
     @pytest.mark.vcr()
-    def test_totals_simple(self, client):
-        rows = client.providers.totals()
+    async def test_totals_simple(self, client):
+        rows = await client.providers.totals()
 
         for row in rows:
             assert "id" in row
 
     @pytest.mark.vcr()
-    def test_get(self, client):
-        provider = client.providers.get("bl")
+    @pytest.mark.asyncio()
+    async def test_get(self, client):
+        provider = await client.providers.get("bl")
 
         assert provider["id"] == "bl"
         assert provider["type"] == "providers"
